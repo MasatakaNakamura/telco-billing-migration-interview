@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長距離電話顧客料金システムのマイグレ案件 面接質問と回答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #3498db;
+            margin-top: 15px;
+        }
+        .question {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-left: 4px solid #3498db;
+        }
+        .question:hover {
+            background-color: #e9ecef;
+        }
+        .answer {
+            display: none;
+            padding: 15px;
+            background-color: #f1f8ff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #a3cfec;
+        }
+        .answer ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .section-divider {
+            border-top: 1px dashed #bdc3c7;
+            margin: 30px 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>長距離電話顧客料金システムのマイグレ案件 面接質問と回答</h1>
+    
+    <h2>1. 業務経験・プロジェクト管理</h2>
+    <h3>リーダー枠向け</h3>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q1. これまでのリーダー経験について教えてください。</div>
+    <div class="answer">
+        <ul>
+            <li>5～10名規模のチームリーダーを複数回経験。</li>
+            <li>要件定義から試験までをリードし、アジャイル開発におけるスプリント計画・進捗管理・レビューを担当。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q2. 要件定義のフェーズで特に意識していることは何ですか？</div>
+    <div class="answer">
+        <ul>
+            <li>ビジネス要件を正しく理解し、認識齟齬を防ぐためにユーザーストーリーを作成。</li>
+            <li>必要に応じてPoC（概念実証）を行い、技術的リスクを事前に洗い出し。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q3. スケジュール管理の経験はありますか？遅延が発生した場合の対処法を教えてください。</div>
+    <div class="answer">
+        <ul>
+            <li>スプリント単位でのタスク見積もりを行い、バーンダウンチャートで進捗を管理。</li>
+            <li>遅延リスクが発生した際は、タスクの優先順位を再評価し、関係者と調整してリカバリープランを立案。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q4. 基本設計やコードレビューの際に、どのような点に注意を払っていますか？</div>
+    <div class="answer">
+        <ul>
+            <li>コードの可読性・拡張性を重視し、SOLID原則に基づいた設計を意識。</li>
+            <li>単なるバグ指摘ではなく、設計・実装の意図を共有するフィードバックを行う。</li>
+        </ul>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <h2>2. 技術面（Java & Spring Boot）</h2>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q5. Java 17 の新機能で、これまでのバージョンと比べて便利になった点を教えてください。</div>
+    <div class="answer">
+        <ul>
+            <li><span class="bold">レコード型（Record）</span>によるボイラープレートコードの削減。</li>
+            <li><span class="bold">Sealed クラス</span>による型の制約の明示化。</li>
+            <li><span class="bold">パターンマッチング</span>の拡張によるコードの簡潔化。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q6. Spring Boot を用いた開発経験を教えてください。</div>
+    <div class="answer">
+        <ul>
+            <li>マイクロサービスアーキテクチャのシステム開発で利用。</li>
+            <li>Spring Data JPA, Spring Security, Spring Batch などの機能を活用。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q7. Spring Boot における MVC モデルの基本的な流れを説明してください。</div>
+    <div class="answer">
+        <ul>
+            <li>Controller → Service → Repository の責務分担を明確にし、AOPを活用して共通処理を実装。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q8. REST API を Spring Boot で実装した経験はありますか？セキュリティ対策としてどのようなことを考慮しましたか？</div>
+    <div class="answer">
+        <ul>
+            <li>JWT認証やOAuth 2.0を利用した認可を導入。</li>
+            <li>CORS設定や入力バリデーション（@Valid, @ExceptionHandler）を実装し、セキュリティリスクを低減。</li>
+        </ul>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <h2>3. フロントエンド技術（尚可スキル）</h2>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q9. Thymeleaf を使用した画面開発の経験はありますか？メリット・デメリットを教えてください。</div>
+    <div class="answer">
+        <ul>
+            <li>Spring Bootとの相性が良く、HTMLテンプレートエンジンとして利用。</li>
+            <li>フラグメント機能を活用し、共通部品化を行った。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q10. Bootstrap を活用した UI 開発の経験はありますか？</div>
+    <div class="answer">
+        <ul>
+            <li>レスポンシブデザインの導入や、CSSのカスタマイズを行った。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q11. jQuery をどのような場面で利用しましたか？</div>
+    <div class="answer">
+        <ul>
+            <li>Ajaxを用いた非同期通信を実装。近年はVue.jsやReactへの移行も検討。</li>
+        </ul>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <h2>4. アジャイル開発・チーム開発</h2>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q12. アジャイル開発の経験はありますか？ウォーターフォールと比べてのメリット・デメリットを説明してください。</div>
+    <div class="answer">
+        <ul>
+            <li>スプリント計画、デイリースクラム、レトロスペクティブに積極的に参加。</li>
+            <li>ウォーターフォールとの比較で変更対応の柔軟性を重視。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q13. チーム開発において Git をどのように活用していますか？ブランチ戦略について知っていますか？</div>
+    <div class="answer">
+        <ul>
+            <li>Git Flowを採用し、develop, feature, release, hotfixの各ブランチを適切に管理。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q14. コードの品質を保つために、どのような工夫をしていますか？</div>
+    <div class="answer">
+        <ul>
+            <li>ユニットテスト（JUnit, Mockito）の導入。</li>
+            <li>CI/CDパイプライン（GitHub Actions, Jenkins）の構築。</li>
+        </ul>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <h2>5. コミュニケーション能力</h2>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q15. わからないことがあった際に、どのように解決しようとしますか？</div>
+    <div class="answer">
+        <ul>
+            <li>公式ドキュメントや社内ナレッジを調査し、解決策を検討。</li>
+            <li>それでも解決しない場合は、チーム内で相談し、適切なエスカレーションを行う。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q16. 過去のプロジェクトで、チーム内で意見が食い違ったときにどのように対処しましたか？</div>
+    <div class="answer">
+        <ul>
+            <li>技術的な裏付けを示し、論理的に説明することを心がける。</li>
+            <li>必要に応じてPoCを作成し、客観的な判断材料を提供。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q17. リモートワーク環境でのチームコミュニケーションについて、どのように工夫していますか？</div>
+    <div class="answer">
+        <ul>
+            <li>定期的な同期ミーティングを実施し、進捗や課題を共有。</li>
+            <li>チームの心理的安全性を確保するため、積極的な報連相を実施。</li>
+        </ul>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <h2>6. 追加確認</h2>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q18. 4月開始のプロジェクトですが、スムーズに参画できるよう準備できていますか？</div>
+    <div class="answer">
+        <ul>
+            <li>すぐに参画可能であり、必要な環境構築も迅速に対応できる。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q19. 品川シーサイドでの出社対応について問題ありませんか？</div>
+    <div class="answer">
+        <ul>
+            <li>初期の出社対応について問題ありません。その後のリモートワークへの移行にも適応可能。</li>
+        </ul>
+    </div>
+    
+    <div class="question" onclick="toggleAnswer(this)">Q20. 長期的な参画を希望されますか？</div>
+    <div class="answer">
+        <ul>
+            <li>プロジェクトの成功に貢献するため、長期的に関与したいと考えている。</li>
+        </ul>
+    </div>
+    
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
